@@ -1,9 +1,16 @@
 import useBillboard from "@/hooks/useBillboard";
-import React from "react";
+import React, { useCallback } from "react";
 import { CiCircleInfo } from "react-icons/ci";
+import PlayButton from "./PlayButton";
+import useInfoModal from "@/hooks/useinfoModal";
 
 const Billboard = () => {
   const { data } = useBillboard();
+  const { openModal } = useInfoModal();
+
+  const handleOpenModal = useCallback(() => {
+    openModal(data?.id);
+  }, [openModal, data?.id]);
 
   return (
     <div className="relative h-[56.25vw]">
@@ -28,7 +35,9 @@ const Billboard = () => {
           {data?.description}
         </p>
         <div className="flex flex-row items-center mt-3 md:mt-4 gap-3">
+          <PlayButton movieId={data?.id} />
           <button
+            onClick={handleOpenModal}
             className="
           bg-white
           text-white
