@@ -2,11 +2,11 @@ import useBillboard from "@/hooks/useBillboard";
 import React, { useCallback } from "react";
 import { CiCircleInfo } from "react-icons/ci";
 import PlayButton from "./PlayButton";
-import useInfoModal from "../hooks/useinfoModal";
+import useInfoModalStore from "@/hooks/useInfoModalStore";
 
 const Billboard = () => {
   const { data } = useBillboard();
-  const { openModal } = useInfoModal();
+  const { openModal } = useInfoModalStore();
 
   const handleOpenModal = useCallback(() => {
     openModal(data?.id);

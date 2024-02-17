@@ -4,7 +4,7 @@ import { getSession } from "next-auth/react";
 import useCurrentUser from "@/hooks/useCurrentUser";
 import useMovieList from "@/hooks/useMovieList";
 import useFavorites from "@/hooks/useFavorites";
-import useInfoModal from "@/hooks/useinfoModal";
+import useInfoModal from "@/hooks/useInfoModalStore";
 // Components
 import Billboard from "@/components/Billboard";
 import Navbar from "@/components/Navbar";
