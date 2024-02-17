@@ -2,7 +2,7 @@ import useBillboard from "@/hooks/useBillboard";
 import React, { useCallback } from "react";
 import { CiCircleInfo } from "react-icons/ci";
 import PlayButton from "./PlayButton";
-import useInfoModal from "@/hooks/useinfoModal";
+import useInfoModal from "../hooks/useinfoModal";
 
 const Billboard = () => {
   const { data } = useBillboard();
