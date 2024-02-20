@@ -1,8 +1,6 @@
 # Netflix Clone
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
-
 ## Log In and Home page
 
 ![1](https://github.com/glauuucoma/Netflix-Clone/assets/36370603/56d41f67-a9c7-4b87-a230-dfe3e2f7c100)
