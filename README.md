@@ -27,7 +27,7 @@ By leveraging technologies like React, Next.js, Tailwind CSS, Prisma, MongoDB, a
 ### Cloning the repository
 
 ```shell
-git clone https://github.com/AntonioErdeljac/next-netflix-tutorial.git
+git clone https://github.com/glauuucoma/Netflix-Clone
 ```
 
 ### Install packages
